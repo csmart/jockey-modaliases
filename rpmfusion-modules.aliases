@@ -268,19 +268,15 @@ alias pci:v00001002d00009643sv*sd*bc*sc*i* fglrx kmod-catalyst
 alias pci:v00001002d00009642sv*sd*bc*sc*i* fglrx kmod-catalyst
 alias pci:v00001002d00009641sv*sd*bc*sc*i* fglrx kmod-catalyst
 alias pci:v00001002d00009640sv*sd*bc*sc*i* fglrx kmod-catalyst
-alias char-major-195-* nvidia kmod-nvidia-173xx
 alias pci:v000010DEd*sv*sd*bc03sc02i00* nvidia kmod-nvidia-173xx
 alias pci:v000010DEd*sv*sd*bc03sc00i00* nvidia kmod-nvidia-173xx
-alias char-major-195-* nvidia kmod-nvidia
 alias pci:v000010DEd00000E00sv*sd*bc04sc80i00* nvidia kmod-nvidia
 alias pci:v000010DEd00000AA3sv*sd*bc0Bsc40i00* nvidia kmod-nvidia
 alias pci:v000010DEd*sv*sd*bc03sc02i00* nvidia kmod-nvidia
 alias pci:v000010DEd*sv*sd*bc03sc00i00* nvidia kmod-nvidia
 alias pci:v000015ADd00000740sv*sd*bc*sc*i* vmci kmod-open-vm-tools
-alias vmware_vmhgfs vmhgfs kmod-open-vm-tools
 alias pci:v00001022d00002000sv*sd*bc*sc*i* vmxnet kmod-open-vm-tools
 alias pci:v000015ADd00000720sv*sd*bc*sc*i* vmxnet kmod-open-vm-tools
-alias vmware_vsock vsock kmod-open-vm-tools
 alias pci:v00001432d00007768sv*sd*bc*sc*i* rt2860sta kmod-rt2860
 alias pci:v00001432d00007748sv*sd*bc*sc*i* rt2860sta kmod-rt2860
 alias pci:v00001432d00007738sv*sd*bc*sc*i* rt2860sta kmod-rt2860
@@ -637,7 +633,6 @@ alias usb:v0BDAp8713d*dc*dsc*dp*ic*isc*ip* r8712u kmod-staging
 alias usb:v0BDAp8712d*dc*dsc*dp*ic*isc*ip* r8712u kmod-staging
 alias usb:v0BDAp8173d*dc*dsc*dp*ic*isc*ip* r8712u kmod-staging
 alias usb:v0BDAp8171d*dc*dsc*dp*ic*isc*ip* r8712u kmod-staging
-alias rt3090sta rt2860sta kmod-staging
 alias pci:v00001814d00003092sv*sd*bc*sc*i* rt2860sta kmod-staging
 alias pci:v00001814d00003091sv*sd*bc*sc*i* rt2860sta kmod-staging
 alias pci:v00001814d00003090sv*sd*bc*sc*i* rt2860sta kmod-staging
@@ -827,9 +822,6 @@ alias pci:v000018CAd00000040sv*sd*bc*sc*i* xgifb kmod-staging
 alias pci:v000018CAd00000027sv*sd*bc*sc*i* xgifb kmod-staging
 alias pci:v000018CAd00000020sv*sd*bc*sc*i* xgifb kmod-staging
 alias pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i* vboxguest kmod-VirtualBox-OSE
-alias ipt_CUI xt_CUI kmod-west-chamber
-alias ipt_gfw xt_gfw kmod-west-chamber
-alias ipt_ZHANG xt_ZHANG kmod-west-chamber
 alias pci:v000014E4d00004727sv*sd*bc*sc*i* wl kmod-wl
 alias pci:v000014E4d00004357sv*sd*bc*sc*i* wl kmod-wl
 alias pci:v000014E4d00004353sv*sd*bc*sc*i* wl kmod-wl
