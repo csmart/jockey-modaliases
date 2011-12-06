@@ -22,13 +22,13 @@ echo "Generating modalias files..."
 echo "================================================================="
 
 for kmodpkg in *.rpm; do
-	rpmdev-extract "$kmodpkg" > /dev/null
 	PKGNAME="${kmodpkg%%-${LATEST_KERNEL_VER}*}"
 	if [[ $EXCLUDE_KMOD_PKGS == *${PKGNAME}* ]]; then
 		echo "Excluded kmod: $EXCLUDE_KMOD_PKGS"
 		continue;
 	fi
 
+	rpmdev-extract "$kmodpkg" > /dev/null
 	PKGDIR="${kmodpkg%.rpm}"
 	KMODS="$(find "$PKGDIR" -name "*ko")"
         for kmod in $KMODS; do
