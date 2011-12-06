@@ -1,5 +1,5 @@
-Name:           parsidora-modaliases
-Version:        1.0.2
+Name:           jockey-modaliases
+Version:        1.0.3
 Release:        1%{?dist}
 Summary:        Provides modaliases for Parsidora'a additional kernel modules
 
@@ -10,6 +10,8 @@ Source1:        rpmfusion-modules-PAE.aliases
 Source2:        rpmfusion-modules-akmods.aliases
 
 BuildArch:      noarch
+
+Provides:       parsidora-modaliases
 
 %description
 This package provides modaliases for kernel modules which are not installed
@@ -30,6 +32,11 @@ install -m 644 %{SOURCE2} %{buildroot}%{_datadir}/jockey/modaliases-akmods/
 %{_datadir}/jockey/modaliases*
 
 %changelog
+* Tue Dec 06 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 1.0.3-1
+- Rename to jockey-modaliases
+- Update for Fedora 16
+- Add a script to generate modalias files
+
 * Mon Dec 05 2011 Chris Smart <chris@kororaa.org> - 1.0.2-1
 - Add akmod based modaliases file.
 
