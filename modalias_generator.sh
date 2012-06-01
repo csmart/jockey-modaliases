@@ -5,12 +5,16 @@
 # Distributed under GPL version 3 or any later version
 #
 
-LATEST_KERNEL_VER="3.1.2-1"
+LATEST_KERNEL_VER="$(uname -r|cut -f1-3 -d'.')"
 EXCLUDE_KMOD_PKGS="kmod-xtables-addons"
 NO_AKMOD_PKGS="kmod-staging"
 
 OUTPUT_BASENAME=rpmfusion-modules
 OUTPUT=${OUTPUT_BASENAME}.aliases
+OUTPUT_DIR=modaliases-$(date +%F_%R)
+
+mkdir $OUTPUT_DIR
+cd $OUTPUT_DIR
 
 echo "Downloading kmod packages..."
 echo "================================================================="
@@ -48,3 +52,4 @@ for kmodpkg in *.rpm; do
 	rm -rf "${PKGDIR}"
 done
 
+echo "Output files ready in $OUTPUT_DIR"
