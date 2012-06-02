@@ -1,5 +1,5 @@
 Name:           jockey-modaliases
-Version:        1.0.3
+Version:        1.0.4
 Release:        1%{?dist}
 Summary:        Provides modaliases for Parsidora'a additional kernel modules
 
@@ -32,6 +32,9 @@ install -m 644 %{SOURCE2} %{buildroot}%{_datadir}/jockey/modaliases-akmods/
 %{_datadir}/jockey/modaliases*
 
 %changelog
+* Sat Jun 02 2012 Chris Smart <chris@kororaa.org> - 1.0.4-1
+- Update for Fedora 17
+
 * Tue Dec 06 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 1.0.3-1
 - Rename to jockey-modaliases
 - Update for Fedora 16
