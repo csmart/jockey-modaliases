@@ -1,5 +1,5 @@
 Name:           jockey-modaliases
-Version:        1.0.4
+Version:        1.0.5
 Release:        1%{?dist}
 Summary:        Provides modaliases for Parsidora'a additional kernel modules
 
@@ -12,6 +12,7 @@ Source2:        rpmfusion-modules-akmods.aliases
 BuildArch:      noarch
 
 Provides:       parsidora-modaliases
+Obsoletes:      parsidora-modaliases
 
 %description
 This package provides modaliases for kernel modules which are not installed
@@ -32,6 +33,9 @@ install -m 644 %{SOURCE2} %{buildroot}%{_datadir}/jockey/modaliases-akmods/
 %{_datadir}/jockey/modaliases*
 
 %changelog
+* Fri Jun 29 2012 Chris Smart <chris@kororaa.org> - 1.0.5-1
+- Updated to support proprietary ATI driver.
+
 * Sat Jun 02 2012 Chris Smart <chris@kororaa.org> - 1.0.4-1
 - Update for Fedora 17
 
